@@ -1,0 +1,219 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6800 64-bit) (preloaded format=pdflatex 2018.9.3)  3 SEP 2018 23:57
+entering extended mode
+**./scifile.tex
+(scifile.tex
+LaTeX2e <2018-04-01> patch level 5
+
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article
+.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size12.
+clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (scicite.sty
+LaTeX Info: Redefining \cite on input line 160.
+LaTeX Info: Redefining \nocite on input line 227.
+Package: scicite 2003/11/04  v 4.01
+)
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\gra
+phicx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\key
+val.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\gra
+phics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\tri
+g.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg
+\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def
+\pdftex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\times
+.sty"
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+\c@lastnote=\count88
+ (scifile.aux)
+\openout1 = `scifile.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
+LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 89.
+
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1pt
+m.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-
+pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count89
+\scratchdimen=\dimen105
+\scratchbox=\box26
+\nofMPsegments=\count90
+\nofMParguments=\count91
+\everyMPshowfont=\toks15
+\MPscratchCnt=\count92
+\MPscratchDim=\dimen106
+\MPnumerator=\count93
+\makeMPintoPDFobject=\count94
+\everyMPtoPDFconversion=\toks16
+)
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\eps
+topdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\i
+nfwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grf
+ext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\k
+vdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\l
+txcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvo
+ptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\k
+vsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\e
+texcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\i
+fluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\p
+dftexcmds.sty"
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\Steven Wang\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\i
+fpdf.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 97.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 97.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 101.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 101.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 101.
+
+
+! LaTeX Error: File `figure_1' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108 \includegraphics[height=3in]{figure_1}
+                                            % Here is how to import EPS art
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+No file scifile.bbl.
+[1
+
+{C:/Users/Steven Wang/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(scifile.aux) ) 
+Here is how much of TeX's memory you used:
+ 1563 strings out of 492973
+ 23518 string characters out of 3124033
+ 82909 words of memory out of 3000000
+ 5421 multiletter control sequences out of 15000+200000
+ 12044 words of font info for 32 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,7n,25p,276b,189s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Steven Wang/AppData/Local/Programs/MiKTeX 2.9/fonts/en
+c/dvips/base/8r.enc}<C:/Users/Steven Wang/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Steven Wang/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Steven Wang/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/
+Users/Steven Wang/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Users/Steven Wang/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb><C:/Users/Steven Wang/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Steven Wang/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/S
+teven Wang/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
+Output written on scifile.pdf (1 page, 73883 bytes).
+PDF statistics:
+ 39 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
