@@ -1,0 +1,342 @@
+% Template for PLoS
+% Version 3.5 March 2018
+%
+% % % % % % % % % % % % % % % % % % % % % %
+%
+% -- IMPORTANT NOTE
+%
+% This template contains comments intended 
+% to minimize problems and delays during our production 
+% process. Please follow the template instructions
+% whenever possible.
+%
+% % % % % % % % % % % % % % % % % % % % % % % 
+%
+% Once your paper is accepted for publication, 
+% PLEASE REMOVE ALL TRACKED CHANGES in this file 
+% and leave only the final text of your manuscript. 
+% PLOS recommends the use of latexdiff to track changes during review, as this will help to maintain a clean tex file.
+% Visit https://www.ctan.org/pkg/latexdiff?lang=en for info or contact us at latex@plos.org.
+%
+%
+% There are no restrictions on package use within the LaTeX files except that 
+% no packages listed in the template may be deleted.
+%
+% Please do not include colors or graphics in the text.
+%
+% The manuscript LaTeX source should be contained within a single file (do not use \input, \externaldocument, or similar commands).
+%
+% % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- FIGURES AND TABLES
+%
+% Please include tables/figure captions directly after the paragraph where they are first cited in the text.
+%
+% DO NOT INCLUDE GRAPHICS IN YOUR MANUSCRIPT
+% - Figures should be uploaded separately from your manuscript file. 
+% - Figures generated using LaTeX should be extracted and removed from the PDF before submission. 
+% - Figures containing multiple panels/subfigures must be combined into one image file before submission.
+% For figure citations, please use "Fig" instead of "Figure".
+% See http://journals.plos.org/plosone/s/figures for PLOS figure guidelines.
+%
+% Tables should be cell-based and may not contain:
+% - spacing/line breaks within cells to alter layout or alignment
+% - do not nest tabular environments (no tabular environments within tabular environments)
+% - no graphics or colored text (cell background color/shading OK)
+% See http://journals.plos.org/plosone/s/tables for table guidelines.
+%
+% For tables that exceed the width of the text column, use the adjustwidth environment as illustrated in the example table in text below.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+%
+% -- EQUATIONS, MATH SYMBOLS, SUBSCRIPTS, AND SUPERSCRIPTS
+%
+% IMPORTANT
+% Below are a few tips to help format your equations and other special characters according to our specifications. For more tips to help reduce the possibility of formatting errors during conversion, please see our LaTeX guidelines at http://journals.plos.org/plosone/s/latex
+%
+% For inline equations, please be sure to include all portions of an equation in the math environment.  For example, x$^2$ is incorrect; this should be formatted as $x^2$ (or $\mathrm{x}^2$ if the romanized font is desired).
+%
+% Do not include text that is not math in the math environment. For example, CO2 should be written as CO\textsubscript{2} instead of CO$_2$.
+%
+% Please add line breaks to long display equations when possible in order to fit size of the column. 
+%
+% For inline equations, please do not include punctuation (commas, etc) within the math environment unless this is part of the equation.
+%
+% When adding superscript or subscripts outside of brackets/braces, please group using {}.  For example, change "[U(D,E,\gamma)]^2" to "{[U(D,E,\gamma)]}^2". 
+%
+% Do not use \cal for caligraphic font.  Instead, use \mathcal{}
+%
+% % % % % % % % % % % % % % % % % % % % % % % % 
+%
+% Please contact latex@plos.org with any questions.
+%
+% % % % % % % % % % % % % % % % % % % % % % % %
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+
+% amsmath and amssymb packages, useful for mathematical formulas and symbols
+\usepackage{amsmath,amssymb}
+
+% Use adjustwidth environment to exceed column width (see example table in text)
+\usepackage{changepage}
+
+% Use Unicode characters when possible
+\usepackage[utf8x]{inputenc}
+
+% textcomp package and marvosym package for additional characters
+\usepackage{textcomp,marvosym}
+
+% cite package, to clean up citations in the main text. Do not remove.
+\usepackage{cite}
+
+% Use nameref to cite supporting information files (see Supporting Information section for more info)
+\usepackage{nameref,hyperref}
+
+% line numbers
+\usepackage[right]{lineno}
+
+% ligatures disabled
+\usepackage{microtype}
+\DisableLigatures[f]{encoding = *, family = * }
+
+% color can be used to apply background shading to table cells only
+\usepackage[table]{xcolor}
+
+% array package and thick rules for tables
+\usepackage{array}
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+
+% create \thickcline for thick horizontal lines of variable length
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+
+% \thickhline command for thick horizontal lines that span the table
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+
+% Remove comment for double spacing
+%\usepackage{setspace} 
+%\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in 
+\textheight 8.75in
+
+% Bold the 'Figure #' in the caption and separate it from the title/caption with a period
+% Captions will be left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Use the PLoS provided BiBTeX style
+\bibliographystyle{plos2015}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+%\pagestyle{myheadings}
+\pagestyle{fancy}
+\fancyhf{}
+%\setlength{\headheight}{27.023pt}
+%\lhead{\includegraphics[width=2.0in]{PLOS-submission.eps}}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\today}
+
+%% Include all macros below
+
+\newcommand{\lorem}{{\bf LOREM}}
+\newcommand{\ipsum}{{\bf IPSUM}}
+
+%% END MACROS SECTION
+
+
+\begin{document}
+\vspace*{0.2in}
+
+% Title must be 250 characters or less.
+\begin{flushleft}
+{\Large
+\textbf\newline{Switching microbial steady states by changing interaction parameters guided by dimensionally-reduced model} % Please use "sentence case" for title and headings (capitalize only the first word in a title (or heading), the first word in a subtitle (or subheading), and any proper nouns).
+}
+\newline
+% Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
+\\
+Name1 Surname\textsuperscript{1,2\Yinyang},
+Name2 Surname\textsuperscript{2\Yinyang},
+Name3 Surname\textsuperscript{2,3\textcurrency},
+Name4 Surname\textsuperscript{2},
+Name5 Surname\textsuperscript{2\ddag},
+Name6 Surname\textsuperscript{2\ddag},
+Name7 Surname\textsuperscript{1,2,3*},
+with the Lorem Ipsum Consortium\textsuperscript{\textpilcrow}
+\\
+\bigskip
+\textbf{1} Affiliation Dept/Program/Center, Institution Name, City, State, Country
+\\
+\textbf{2} Affiliation Dept/Program/Center, Institution Name, City, State, Country
+\\
+\textbf{3} Affiliation Dept/Program/Center, Institution Name, City, State, Country
+\\
+\bigskip
+
+% Insert additional author notes using the symbols described below. Insert symbol callouts after author names as necessary.
+% 
+% Remove or comment out the author notes below if they aren't used.
+%
+% Primary Equal Contribution Note
+\Yinyang These authors contributed equally to this work.
+
+% Additional Equal Contribution Note
+% Also use this double-dagger symbol for special authorship notes, such as senior authorship.
+\ddag These authors also contributed equally to this work.
+
+% Current address notes
+\textcurrency Current Address: Dept/Program/Center, Institution Name, City, State, Country % change symbol to "\textcurrency a" if more than one current address note
+% \textcurrency b Insert second current address 
+% \textcurrency c Insert third current address
+
+% Deceased author note
+\dag Deceased
+
+% Group/Consortium Author Note
+\textpilcrow Membership list can be found in the Acknowledgments section.
+
+% Use the asterisk to denote corresponding authorship and provide email address in note below.
+* correspondingauthor@institute.edu
+
+\end{flushleft}
+% Please keep the abstract below 300 words
+\section*{Abstract}
+
+
+
+% Please keep the Author Summary between 150 and 200 words
+% Use first person. PLOS ONE authors please skip this step. 
+% Author Summary not valid for PLOS ONE submissions.   
+\section*{Author summary}
+
+
+\linenumbers
+
+% Use "Eq" instead of "Equation" for equation citations.
+\section*{Introduction}
+
+	Composed of a large number of microorganisms , gut microbiome has great influence on health of human body. In a healthy person's body, these microorganisms decompose food molecules and produce beneficial substances. However, gut microbiome can be disturbed by environment factors such as food and medicine. In some cases, such as using of antibiotics, the disturbance is too strong for the microbiome community to restore its original healthy composition. Varying with time, microbiome composition will stabilize at a state different from the healthy one, causing the gut to be susceptible to infection. Treatments of this unhealthy state include Fecal Microbial Transplant(FMT), which brings the microbiome composition of a healthy donor to the infected patient's microbiome, restoring its normal community.  
+	
+For instance, the use of Clindamycin could change the composition of gut microbiome to a state susceptible to \textit{Clostridium difficile} infection (cite Buffie 2011). Clinically, this situation is frequently seen in senior patients who take antibiotics which introduces a \textit{C. difficile} infection, causing diarrhea and abdominal pain. An experiment done on mice shows that directly giving \textit{C. difficile} to mice does not change the gut microbiome significantly. On the other hand, after receiving clindamycin, the microbiome changes to a susceptible state which could develop into an infected state after receiving \textit{C. difficle}. 
+	
+Modelling the dynamics of gut microbiome requires understanding the dynamics of microbial ecosystem. The gut microbiome is composed of a large number of bacteria species, each of them constantly consuming and producing different substances. One bacteria species might consume another species' production; a different species might be damaged by another species' production. In addition, species' population are simultaneously growing and dying, forming a complex system. 
+
+
+Based on the aforementioned mice experiment, Stein \textit{et al.} developed a model that captures the phenomena discovered in the experiment. This model sorts microorganisms in gut into 11 categories, and simulates the change in  amount of a certain category using generalized Lotka-Volterra equations. In addition, they assigned a susceptibility coefficient to each category in order to model the change brought by antibiotics. This model's predicted dynamic system steady states include normal, healthy states of gut microbiome, as well as the susceptible state and the \textit{C. difficile} infected state.
+
+Antibiotics can drastically affect the state of microbiome by killing many microorganisms. Studies have shown that many other factors can also influence state of gut microbiome, including gastrointestinal transit time, amount of consumed dietary fiber, emulsifiers in food additives, and Roux-en-Y gastric bypass surgery used to reduce obesity. The factors mentioned above changes the environment of the gut microbiome, thus changing the way different microorganisms interact with each other. Based on clinical interest, we seek a principled way of qualitatively making these environmental changes to improve one's health. Therefore, inspired by the generalized Lotka-Volterra model, we model these environmental changes by changing the interaction coefficients between different categories. By changing these interaction coefficients we change the dynamical landscape of the generalized Lotka-Volterra system. 
+
+Specifically, two steady states in this 11-dimensional system, usually one diseased or disease-susceptible steady state and another healthy state are considered, as well as an initial microbiome state in between. Using a method called "steady states reduction"(SSR), we are able to closely estimate this 11-dimensional system using a well-studied 2-dimensional generalized Lotka-Volterra system. If the initial condition of interest goes to the undesirable steady state, a coordinated change in the interaction matrix of this reduced 2-dimensional system can be made to change the dynamical landscape so that the concerned initial condition goes to the desirable steady state. This change of 2-D interaction coefficient could be projected back to the 11-dimensional original interaction matrix according the formulae of SSR method. Therefore, we can mathematically estimate a coordinated change in these interaction coefficients sufficient to change the trajectory of microbiome state from going to unwanted steady state to going to a healthy one. In stead of randomly trying, this method gives a computationally quick way to change the interaction matrix in the benefit of healthy steady states. This method could potentially enhance treatment of disease related to gut microbiome. In addition, this mathematical method could also be applied to other complex systems with favorable and unfavorable steady states.
+
+\section*{Materials and methods}
+Generalized Lotka-Volterra equations are used model the growth and interactions of the gut microbial community. They are given by
+
+\begin{equation}
+\frac{d}{dt} y_i(t) = y_i(t)\Big( \rho_i  + \sum_{j=1}^N  K_{ij} y_i(t)\Big)
+\end{equation}
+
+where $y_{i}(t)$ denotes the number of microbes in a certain species at a given time $t$, $\rho_{i}$ is the growth rate of each species, and $K_{ij}$ is the interaction coefficient between two populations $i$ and $j$. In the model used by Stein \textit{et al.}, a large number of speices in the whole gut microbiome is categorized into 11 categories, and each $y_i$ in the generalized Lotka-Volterra(gLV) equations represent a category instead of a specific species. 
+
+A technique of dimensional reduction, called "Steady State Reduction"(SSR), can be applied to high-dimensional generalized Lotka-Volterra equations to reduce the model into 2 dimensions. As shown in Fig 3, in the high-dimensional dynamic system, we choose two steady states of interest, a healthy steady state $\vec{y_a}$and a diseased state $\vec{y_b}$. These two steady state vectors span a plane in the high-dimensional space, and we aim to find a 2-D gLV dynamics that captures the original high-dimensional dynamics on this plane as close as possible, with the assumption that the plane spanned by $\vec{y_a}$ and $\vec{y_b}$ is a slow manifold. Explicitly, the newly-created 2-D gLV system has the form
+
+\begin{align}
+\frac{dx_a}{dt} &= x_a(\mu_a+M_{aa}x_a+M_{ab}x_b) \\
+\frac{dx_b}{dt} &= x_b(\mu_b+M_{ba}x_a+M_{bb}x_b)
+\end{align}
+where $x_a$ corresponds to the high-dimensional gLV system's component on the direction $\hat{x_a} = \frac{\vec{y_a}}{\left\lVert\vec{y_a}\right\rVert}_2$ and $x_b$ correspond to the direction $\hat{x_b} = \frac{\vec{y_b}}{\left\lVert\vec{y_b}\right\rVert}_2$, and $\left\lVert\vec{v}\right\rVert_2$ represents the 2-norm of $\vec{v}$. Assuming two steady states $\vec{y_a}$ and $\vec{y_b}$ are orthogonal, SSR method gives the parameter value as follows:
+
+\begin{align}
+\mu_\gamma &= \frac{\vec{\rho}\cdot \vec{y_\gamma}^2}{\left\lVert\vec{y_\gamma}\right\rVert^2_2} \\
+M_{\gamma\delta} &= \frac{(\vec{y_\gamma^2})^TK\vec{y_\gamma}}{\left\lVert\vec{y_\gamma}\right\rVert^2_2\left\lVert\vec{y_\delta}\right\rVert_2}
+\end{align}
+
+where $\gamma,\delta \in a,b$ and $\vec{y}^2 \equiv diag(\vec{y})\vec{y}$ is the element-wise square of $\vec{y}$. This SSR method is mathematically proven to be the gLV dynamic system with the smallest variation from the original high-dimensional dynamics. 
+
+
+In this study, we are interested in modifying parameters to achieve the goal of switching steady states. In a high-dimensional gLV model, interaction parameters are many. Due to the complexity of dynamical landscape, it is hard to find the most effective interaction parameters and determine the minimum change value enough to switch steady states. When simplifying the high-dimensional system using SSR, we obtain a 2-D dynamic landscape with four interaction parameters, $M_{aa}$, $M_{ab}$, $M_{ba}$ and $M_{bb}$. These four parameters can be further non-dimensionalized into  only two parameters, called new $M_{ab}$ and $M_{ba}$. These two parameters  , generated from SSR, determines the dynamical landscape in the 2-D gLV system. Bifurcation analysis shows that as the parameter $M_{ab}$ and $M_{ba}$ changes, a third steady state, marking the position of separatrix, changes its position in the phase space. As shown in Fig 4, there are two steady states, corresponding to $\vec{y_a}$ and $\vec{y_b}$ in the high-dimensional system, at $(0,1)$ and $(1,0)$. Changing interaction parameters $M_{ab}$ and $M_{ba}$ will move the separatrix close to one of the fixed steady states $(0,1)$ and $(1,0)$, thus making more points on the phase space evolve to the other one. 
+
+This bifurcation analysis shows a general direction to change the parameters in order to switch steady states. By numerically trying, the minimal change enough to switch steady states in parameter $M_{ab}$ or $M_{ba}$ can be found. As a guide to change the interaction parameters in the original high-dimensional system, this parameter change in the steady state reduced system can be projected back using Eq (5). There are more than one way to change $K$ in eq (5) to change parameter $M_{\gamma\delta}$ the same amount, and we aim to find a minimal change. Generally, Eq (5) can be rewritten as 
+
+\begin{equation}
+M_{\gamma\delta} = \sum_{i,j}\alpha_{ij}K_{ij}
+\end{equation}
+
+where $\alpha_{ij}$ is determined by $\vec{y_\gamma}$ and $\vec{y_\delta}$.  The biggest $\alpha_{ij}$ coefficient means the smallest change in $K_{ij}$  parameter. Therefore, we are able to find the minimal change in $K$ that corresponds to change in parameters in the steady state reduced 2-D model. 
+% For figure citations, please use "Fig" instead of "Figure".
+
+
+% Place figure captions after the first paragraph in which they are cited.
+
+
+% Results and Discussion can be combined.
+\section*{Results}
+
+
+
+
+
+\section*{Discussion}
+
+
+\section*{Conclusion}
+
+
+
+\section*{Supporting information}
+
+
+\section*{Acknowledgments}
+
+
+\nolinenumbers
+
+% Either type in your references using
+% \begin{thebibliography}{}
+% \bibitem{}
+% Text
+% \end{thebibliography}
+%
+% or
+%
+% Compile your BiBTeX database using our plos2015.bst
+% style file and paste the contents of your .bbl file
+% here. See http://journals.plos.org/plosone/s/latex for 
+% step-by-step instructions.
+% 
+\begin{thebibliography}{10}
+
+
+\end{thebibliography}
+
+
+
+\end{document}
+
