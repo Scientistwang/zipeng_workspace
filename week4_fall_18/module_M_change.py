@@ -327,7 +327,7 @@ def time_change_11D_traj(delta_K, coord):
     t = np.linspace(0, 10000, 10001)
     stein_ss = bb.get_all_ss()
     ssa = stein_ss['E']; ssb = stein_ss['C']
-    ic = 0.33*ssa+ssb*0.55
+    ic = 0.5*ssa+ssb*0.5
     labels, mu, M, eps = bb.get_stein_params()
     K = np.zeros((11,11))
     for i in range(11):

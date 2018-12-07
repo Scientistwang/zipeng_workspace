@@ -155,10 +155,10 @@ def SSR(xa, xb, mu, M):
     nu = np.array([np.dot(xa2, mu)/np.dot(xa,xa),
                   np.dot(xb2, mu)/np.dot(xb,xb)])
 
-    L = np.array([[np.dot(xa2.T,np.dot(M,xa))/(np.dot(xa,xa)*np.dot(xa,xa)**0.5), 
-                   np.dot(xa2.T,np.dot(M,xb))/(np.dot(xa,xa)*np.dot(xb,xb)**0.5)],
-                  [np.dot(xb2.T,np.dot(M,xa))/(np.dot(xb,xb)*np.dot(xa,xa)**0.5),
-                   np.dot(xb2.T,np.dot(M,xb))/(np.dot(xb,xb)*np.dot(xb,xb)**0.5]])
+    L = np.array([[np.dot(xa2.T,np.dot(M,xa))/np.dot(xa,xa), 
+                   np.dot(xa2.T,np.dot(M,xb))/np.dot(xa,xa)],
+                  [np.dot(xb2.T,np.dot(M,xa))/np.dot(xb,xb),
+                   np.dot(xb2.T,np.dot(M,xb))/np.dot(xb,xb)]])
     return nu, L
 
 class Params:
